@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Arsenal (Red Gunners from London)</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #dc0024; /* Arsenal Red */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .image-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .image-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .image-card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To Arsenal (Red Gunners from London)</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-card">
+            <img src="Arsenal team.avif" alt="Arsenal Team Lineup">
+            <div class="image-card-content">
+                <h2>The Gunners Squad</h2>
+                <p>Ready for battle on the pitch.</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="Arsenal flag.jpeg" alt="Arsenal Flag Waving">
+            <div class="image-card-content">
+                <h2>Our Colors Flying High</h2>
+                <p>The spirit of Arsenal at the stadium.</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="Arsenal stadium.jpg" alt="Emirates Stadium at Night">
+            <div class="image-card-content">
+                <h2>The Emirates Under Stars</h2>
+                <p>Our majestic home stadium by night.</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="Arsenal celebrating.webp" alt="Arsenal Players Celebrating">
+            <div class="image-card-content">
+                <h2>United in Victory</h2>
+                <p>Celebrating a goal with the fans.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Arsenal FC Fan Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
